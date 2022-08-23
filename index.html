@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevinKnowledge</title>
+    <link rel="icon" type="image/x-icon" href="globo.png">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="funcoes.js" defer></script>
+    
+</head>
+<body onload="mostrarCartao();">
+    
+<div id="global">
+<form action="">
+<div id="principal">
+
+<label>Título</label>
+<input type="text" placeholder="Digite um título" id="titulo">
+<label>Linguagem/Skill</label>
+<input type="text" placeholder="Digite uma liguagem ou sKill" id="linguagemSkill"/>
+
+<label>Categorias</label>
+<select id="categorias">
+    <option="" selected disabled value >Selecione uma categoria</option=>
+    <option value = "frontend">Front-End</option>
+    <option value = "backend">Back-End</option>
+    <option value = "fullstack">Full-Stack</option>
+    <option value = "softSkill">Soft-Skill</option></select>
+
+
+<label>Descrição</label>
+<textarea placeholder="Escreva aqui o detalhe da sua dica..." id="descricao" cols="30" rows="10"></textarea>
+
+<label>Vídeo do Youtube</label>
+<input type="text" placeholder=" http://suaurl.com" id="videoyoutube">
+<div id="botoes">
+    <button id="bot">Limpar</button>
+    
+    <button id="bot2">Salvar</button>
+    </div>
+
+</div>
+</form>
+<div id="area2">
+   
+    <div id="segurarcartoes">
+       <div class="cartoes">
+        <span>Total</span>
+        <span id="TotalCount">0</span>
+  
+
+       </div>
+       <div class="cartoes">
+        <span>Front-End</span>
+        <span id="FrontCont">0</span>
+  
+
+       </div>
+       <div class="cartoes">
+        <span>Back-End</span>
+        <span id="BackCont">0</span>
+  
+
+       </div>
+       <div class="cartoes">
+        <span>Full-Stack</span>
+        <span id="FullCont">0</span>
+  
+
+       </div>
+       <div class="cartoes">
+        <span>Soft-Skill</span>
+        <span id="Soft">0</span>
+
+       </div>
+
+
+    </div>
+    <div id="pesquisar">
+    <input type="text" placeholder="Escreva sua pesquisa" id="searchbar" onkeyup="pesquisar()"/>
+    <img src="loupe.png" id="loupe"/>
+    </div>
+    <div id="cartaoespaco">
+     
+
+</div>
+ 
+
+
+
+
+
+
+
+</body>
+</html>
+
